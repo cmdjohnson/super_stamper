@@ -5,7 +5,8 @@ module SuperStamper
     def self.execute(stdout, arguments=[])
 
       options = {
-        :filename     => 'header.txt'
+        :filename     => 'header.txt',
+        :extension    => 'rb'
       }
       mandatory_options = %w(  )
 
@@ -18,6 +19,10 @@ module SuperStamper
           Options are:
         BANNER
         opts.separator ""
+        ########################################################################
+        opts.on("-e", "--extension PATH", String,
+          "Which extension to look for.",
+          "Default: rb") { |arg| options[:extension] = arg }
         ########################################################################
         opts.on("-f", "--filename PATH", String,
           "Which file to use as header.",
@@ -35,8 +40,9 @@ module SuperStamper
       end
 
       filename = options[:filename]
+      extension = options[:extension]
       
-      SuperStamper::Base.stamp_recursively( :header_file_name => filename )
+      SuperStamper::Base.stamp_recursively( :header_file_name => filename, :extension => extension )
     end
   end
 end

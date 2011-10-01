@@ -8,7 +8,11 @@ Easily add a header recursively to multiple files in your project directory.
 
 == FEATURES/PROBLEMS:
 
-Stamp your files!
+This program removes any magic encoding lines such as these:
+
+# -*- encoding : utf-8 -*-
+
+After running super_stamper, you might want to run magic_encoding again.
 
 == SYNOPSIS:
 
