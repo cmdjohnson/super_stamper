@@ -1,0 +1,14 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+bin/super_stamper
+lib/super_stamper.rb
+lib/super_stamper/cli.rb
+script/console
+script/destroy
+script/generate
+test/test_helper.rb
+test/test_super_stamper.rb
+test/test_super_stamper_cli.rb
