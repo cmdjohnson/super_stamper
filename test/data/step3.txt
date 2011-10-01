@@ -1,0 +1,35 @@
+# -- begin header --
+# Let's put gopher in a different font now.
+#                                                                   
+#                  :                                                
+#                 t#,                                  ,;           
+#          .Gt   ;##W.   t         .    .            f#i j.         
+#         j#W:  :#L:WE   ED.       Di   Dt         .E#t  EW,        
+#       ;K#f   .KG  ,#D  E#K:      E#i  E#i       i#W,   E##j       
+#     .G#D.    EE    ;#f E##W;     E#t  E#t      L#D.    E###D.     
+#    j#K;     f#.     t#iE#E##t    E#t  E#t    :K#Wfff;  E#jG#W;    
+#  ,K#f   ,GD;:#G     GK E#ti##f   E########f. i##WLLLLt E#t t##f   
+#   j#Wi   E#t ;#L   LW. E#t ;##D. E#j..K#j...  .E#L     E#t  :K#E: 
+#    .G#D: E#t  t#f f#:  E#ELLE##K:E#t  E#t       f#E:   E#KDDDD###i
+#      ,K#fK#t   f#D#;   E#L;;;;;;,E#t  E#t        ,WW;  E#f,t#Wi,,,
+#        j###t    G#t    E#t       f#t  f#t         .D#; E#t  ;#W:  
+#         .G#t     t     E#t        ii   ii           tt DWi   ,KK: 
+#           ;;                                                      
+#                                                                   
+#
+# Done.
+# -- end header --
+
+################################################################################
+# This is my source file. It has some comment lines already on the top.
+################################################################################
+# w00t w00t w00t w00t w00t w00t w00t w00t w00t w00t w00t w00t w00t 
+################################################################################
+
+class Foo
+    # header should appear above the line 'class foo'
+
+    def bar
+        "baz"
+    end
+end

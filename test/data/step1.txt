@@ -1,0 +1,15 @@
+# -*- encoding : utf-8 -*-
+
+################################################################################
+# This is my source file. It has some comment lines already on the top.
+################################################################################
+# w00t w00t w00t w00t w00t w00t w00t w00t w00t w00t w00t w00t w00t 
+################################################################################
+
+class Foo
+    # header should appear above the line 'class foo'
+
+    def bar
+        "baz"
+    end
+end

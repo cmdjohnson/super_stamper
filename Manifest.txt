@@ -12,3 +12,8 @@ script/generate
 test/test_helper.rb
 test/test_super_stamper.rb
 test/test_super_stamper_cli.rb
+test/data/header1.txt
+test/data/header2.txt
+test/data/step1.txt
+test/data/step2.txt
+test/data/step3.txt
