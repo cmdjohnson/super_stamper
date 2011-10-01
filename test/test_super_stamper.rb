@@ -16,10 +16,10 @@ class SuperStamperTest < Test::Unit::TestCase
     step2_str = get_tmp_file('step2').read
     step3_str = get_tmp_file('step3').read
     
-    SuperStamper.stamp_single( :filename => get_tmp_filename('step1'), :header_file_name => get_tmp_filename('header1') )
+    SuperStamper::Base.stamp_single( :filename => get_tmp_filename('step1'), :header_file_name => get_tmp_filename('header1') )
     assert_equal step2_str, get_tmp_file('step1').read
     
-    SuperStamper.stamp_single( :filename => get_tmp_filename('step2'), :header_file_name => get_tmp_filename('header2') )
+    SuperStamper::Base.stamp_single( :filename => get_tmp_filename('step2'), :header_file_name => get_tmp_filename('header2') )
     assert_equal step3_str, get_tmp_file('step2').read
   end
   
