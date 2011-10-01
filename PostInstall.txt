@@ -1,7 +1,10 @@
+Just one more step until you're ready:
 
-For more information on super_stamper, see http://super_stamper.rubyforge.org
+Create a file called 'header.txt' and put it in the directory that contains your source files.
+Every line should be commented (e.g. prefixed with a hash '#')
 
-NOTE: Change this information in PostInstall.txt 
-You can also delete it if you don't want it.
+Then, change directory to your project and run super_stamper:
 
+ $ super_stamper
 
+Enjoy stamping your own files!

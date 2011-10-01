@@ -8,7 +8,7 @@ class TestSuperStamperCli < Test::Unit::TestCase
     @stdout = @stdout_io.read
   end
   
-  def test_print_default_output
-    assert_match(/To update this executable/, @stdout)
-  end
+#  def test_print_default_output
+#    assert_match(/To update this executable/, @stdout)
+#  end
 end
