@@ -40,7 +40,7 @@ module SuperStamper
       header_file_name = options[:header_file_name] || "header.txt"
     
       raise "I need a filename" if filename.nil?
-      raise "Please provide a header filename or a header.txt in your working directory." unless File.exists?(header_file_name)
+      raise "Please provide a valid filename (-f) or create a header.txt in your working directory." unless File.exists?(header_file_name)
     
       file = File.new(filename)
       header = File.new(header_file_name).read
