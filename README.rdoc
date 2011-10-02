@@ -14,6 +14,8 @@ This program removes any magic encoding lines such as these:
 
 After running super_stamper, you might want to run magic_encoding again.
 
+If you use Rails, any plugin files (for example, in the vendor dir) will also be stamped.
+
 == SYNOPSIS:
 
 1. Create a file called 'header.txt' in your project dir
