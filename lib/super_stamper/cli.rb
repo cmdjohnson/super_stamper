@@ -12,7 +12,7 @@ module SuperStamper
 
       parser = OptionParser.new do |opts|
         opts.banner = <<-BANNER.gsub(/^          /,'')
-          Easily add a header recursively to multiple files in your project directory.
+          Easily add a header (such as a copyright notice or license) recursively to multiple files in your project directory.
 
           Usage: #{File.basename($0)} [options]
 

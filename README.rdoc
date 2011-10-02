@@ -4,7 +4,7 @@
 
 == DESCRIPTION:
 
-Easily add a header recursively to multiple files in your project directory.
+Easily add a header (such as a copyright notice or license) recursively to multiple files in your project directory.
 
 == FEATURES/PROBLEMS:
 
