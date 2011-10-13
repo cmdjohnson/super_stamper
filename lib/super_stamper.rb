@@ -50,7 +50,7 @@ module SuperStamper
         # Let's remove the magic_encoding at the start, if any.
         str.gsub!(/^# -\*-.+-\*-(\r)?#{NEWLINE}/, '')
         # and now .. do this.
-        contents_array = [ BEGIN_HEADER, NEWLINE, header, NEWLINE, END_HEADER, NEWLINE ]
+        contents_array = [ BEGIN_HEADER, NEWLINE, header, END_HEADER, NEWLINE ]
         contents_str = contents_array.to_s
         # Remove the header that was already in place, if any.
         str.gsub!(/#{BEGIN_HEADER}.*#{END_HEADER}#{NEWLINE}/m, '')
