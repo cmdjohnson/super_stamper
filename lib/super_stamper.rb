@@ -5,7 +5,7 @@ $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname
 
 module SuperStamper
   # a version constant
-  VERSION = '0.0.3'
+  VERSION = '0.0.4'
   # a class
   class Base
     BEGIN_HEADER = "# -- begin header --"
@@ -51,11 +51,16 @@ module SuperStamper
         str.gsub!(/^# -\*-.+-\*-(\r)?#{NEWLINE}/, '')
         # and now .. do this.
         contents_array = [ BEGIN_HEADER, NEWLINE, header, END_HEADER, NEWLINE ]
-        contents_str = contents_array.to_s
+	# behavior of to_s changed from Ruby 1.8.7 to 1.9.3, 
+	# used to be [ "foo", "bar" ].to_s # => "foobar" <--- 1.8.7
+	# now it's => "[\"foo\", \"bar\"]" # 1.9.3
+	#contents_str = contents_array.to_s
+	contents_str = contents_array.join
         # Remove the header that was already in place, if any.
         str.gsub!(/#{BEGIN_HEADER}.*#{END_HEADER}#{NEWLINE}/m, '')
         # concat it
-        contents = contents_str + str
+        #contents = contents_str + str
+	contents = "#{contents_str}#{str}"
         # Re-open file and write to it
         file.close
         file = File.new(filename, 'w')
