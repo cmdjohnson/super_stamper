@@ -1,3 +1,24 @@
+# -*- encoding : utf-8 -*-
+# -- begin header --
+###############################################################################
+# super_stamper, a nifty tool that puts headers in all your source files.
+# It does exactly what you see here: a header.txt file is pasted into every .rb file.
+# Also, some random quotes can be added just for kicks.
+#
+# Protip: also install the magic_encoding gem alongside to use it like this:
+# $ super_stamper -q && magic_encoding
+#
+# (c) 2012 Commander Johnson
+# Licensed under the MIT license
+###############################################################################
+
+#* Quits: crag-- (crag@202.154.72.136) (Dead girls dont say no)
+#* Quits: KiM (KiM@134.115.157.196) (going for a walk :p)
+#<@ShowDowN> that is sick
+#<@ShowDowN> we should ban him next time he comes in
+#<@nekro> yeah, who the hell goes for walks
+
+# -- end header --
 require File.dirname(__FILE__) + '/test_helper.rb'
 
 require 'fileutils'
