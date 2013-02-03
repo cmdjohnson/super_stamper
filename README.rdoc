@@ -10,17 +10,23 @@ Easily add a header (such as a copyright notice or license) recursively to multi
 
 This program removes any magic encoding lines such as these:
 
-# -*- encoding : utf-8 -*-
+ # -*- encoding : utf-8 -*-
 
 After running super_stamper, you might want to run magic_encoding again.
 
 If you use Rails, any plugin files (for example, in the vendor dir) will also be stamped.
+
+By default, only .rb files are stamped.
 
 == SYNOPSIS:
 
 1. Create a file called 'header.txt' in your project dir
 2. Run 'super_stamper'
 3. Enjoy your freshly stamped files and impress yourself with a super-long 'git status' overview.
+
+ # Protip (TM): Use super_stamper in conjunction with the magic_encoding gem for best results. 
+ # Use the -q flag to get quotes from the bash.org [http://www.bash.org/] Quote Database (QDB).
+ $ super_stamper -q && magic_encoding
 
 == REQUIREMENTS:
 
